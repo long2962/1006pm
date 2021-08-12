@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="vi">
 <head>
-    <title>Cẩm nang phòng dịch</title>
+    <title>Tình hình Covid_19</title>
     <meta charset="utf-8">
     <meta name="description" content="Website tổng hợp giúp các bạn hiểu rõ hơn về đại dịch COVID-19 qua đó giúp các bạn có cách phòng tránh tốt hơn" />
     <meta name="keywords" content="covid 19, dich, virus, virus vu han, khai bao y te"/>
@@ -28,7 +28,7 @@
                     $("#cachpc").removeClass("active");
                     $("#about").removeClass("active");
                 }
-                if($(this).scrollTop()>550){
+                if($(this).scrollTop()>600){
                     $("#thongke").addClass("active");
                     $("#gioithieu").removeClass("active");
                     $("#cachpc").removeClass("active");
@@ -40,7 +40,7 @@
                     $("#cachpc").addClass("active");
                     $("#about").removeClass("active");
                 }
-                if($(this).scrollTop()>4400){
+                if($(this).scrollTop()>4300){
                     $("#thongke").removeClass("active");
                     $("#gioithieu").removeClass("active");
                     $("#cachpc").removeClass("active");
@@ -69,16 +69,16 @@ function myFunction() {
 <body>
 <header>
     <div id="logo">
-        <marquee>Toàn dân tích cực hưởng ứng phòng, chống dịch Covid-19 theo tinh thần “Chống dịch như chống giặc”!</marquee></div>
-  <div class="topnav" id="fixNav" style="height: 50px;">
-    <img src="logo.jpg" alt="LOGO" style="width: 50px;height: 50px; float: left;">
-    <a id="gioithieu" href="#logo" class="active">Giới thiệu</a>
-    <a id="thongke" href="#thongke1">Thống kê</a>
-    <a id="cachpc" href="#cachpcc">Cách phòng tránh</a>
-    <a id="about" href="#about1">Về chúng tôi</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <marquee>Nghiêm túc thực hiện tốt chỉ thị 16 của thủ tướng chính phủ. Chung tay đẩy lùi dịch Covid-19</marquee></div>
+  <div class="topnav" id="fixNav">
+  <img src="logo.png" alt="LOGO" style="float:left">
+  <a id="gioithieu" href="#logo" class="active">Giới thiệu</a>
+  <a id="thongke" href="#thongke1">Thống kê</a>
+  <a id="cachpc" href="#cachpcc">Cách phòng tránh</a>
+  <a id="about" href="#about1">Về chúng tôi</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
-    </a>
+  </a>
 </div>
 
 
@@ -113,12 +113,11 @@ function myFunction() {
             <tr>
                 <td>
                     <div id="imghome">
-                       <h3>Nguồn gốc đại dịch</h3>
+                       <h1>Nguồn gốc đại dịch</h1>
                     </div>
                 </td>
                 <td>
-                    <div id="contenthome" style="padding-left: 1%;padding-right: 1%;">
-                    <p style="padding: 0px;padding-top: 1%;">
+                    <div id="contenthome">
                         <span class="dropcap">Đ</span>ại dịch COVID-19 là đại dịch bệnh truyền nhiễm với tác nhân là virus SARS-CoV-2 và các biến thể của nó đang diễn ra trên phạm vi toàn cầu. Khởi nguồn vào cuối tháng 12 năm 2019 với tâm dịch đầu tiên tại thành phố Vũ Hán thuộc miền Trung Trung Quốc đại lục, bắt nguồn từ một nhóm người mắc viêm phổi không rõ nguyên nhân. Giới chức y tế địa phương xác nhận rằng trước đó họ đã từng tiếp xúc, chủ yếu với những thương nhân buôn bán và làm việc tại chợ bán buôn hải sản Hoa Nam. Các nhà khoa học Trung Quốc đã tiến hành nghiên cứu và phân lập được một chủng coronavirus mà Tổ chức Y tế Thế giới lúc đó tạm gọi là 2019-nCoV có trình tự gen giống với SARS-CoV trước đây với mức tương đồng lên tới 79,5%.
                         <br>
                     <button id="but1" type="button" onclick="document.getElementById('hide').style.display='block';document.getElementById('but1').style.display='none';document.getElementById('but2').style.display='block'" >Xem thêm</button>
@@ -132,7 +131,6 @@ function myFunction() {
                         <br>
                           Những ảnh hưởng trên toàn thế giới của đại dịch COVID-19 hiện nay bao gồm: thiệt hại sinh mạng con người, sự bất ổn về kinh tế và xã hội, tình trạng bài ngoại và phân biệt chủng tộc đối với người gốc Trung Quốc và Đông Á, việc truyền bá thông tin sai lệch trực tuyến và thuyết âm mưu về virus.
                     </span>
-                </p>
                     <button id="but2" type="button" onclick="document.getElementById('hide').style.display='none';document.getElementById('but1').style.display='block';document.getElementById('but2').style.display='none'" >Ẩn bớt</button>
                 </div>
             </td>
@@ -140,7 +138,7 @@ function myFunction() {
         </table>
     </div>
 </div>
-<div id="thongke1" style="margin: 0px;padding: 0px;border-top: 3px solid black;margin-top: 2%;overflow: auto;">
+<div id="thongke1" style="margin: 0px;padding: 0px;background-color: black;  height: 500px;overflow: auto;border: 1px solid red;border-top: 0px;">
     <h1 class="thongke2">Thống kê tình hình Covid tại Việt Nam</h1>
     <table id="tk3">
         <tr>
@@ -159,31 +157,29 @@ function myFunction() {
         </tr>
         <tr>
             <td class="nhiem">
-                <p>241.543</p>
+                <p>232.937</p>
             </td>
             <td class="dieutri">
-                <p>151.898</p>
+                <p>148.440</p>
             </td>
             <td class="khoi">
-                <p>85.154</p>
+                <p>80.348</p>
             </td>
             <td class="tu">
-                <p>4.487</p>
+                <p>4.145</p>
             </td>
         </tr>
     </table>
-    <p style="color: orange;padding: 0px;">&emsp;&emsp;Số liệu được cập nhật lúc 13:00 ngày 12/8/2021<br/>
-    <span>&emsp;&emsp;Dữ liệu được tham khảo tại:<a href="https://ncov.moh.gov.vn/">https://ncov.moh.gov.vn/</a></span></p>
-    <div style="overflow: auto;">
-        <h4 class="thongke3">Nhận xét</h4>
-        <p style="padding: 0px;margin: 20px;color: gray;">"Tốc độ lây nhiễm ở Việt Nam hiện tại đang tăng rất nhanh và có xu hướng nhanh hơn. Con số nhiễm bệnh đã vượt qua 230 ngàn người và ta cũng thấy được tỉ lệ tử vong của những ca nhiễm là rất cao. Tỉ lệ ca nhiễm trên ca chữa khỏi đã vượt quá 5%. Vì vậy, để bảo vệ sức khỏe cho bản thân và toàn cộng đồng, chúng ta nên đảm bảo phải phòng tránh dịch một cách tốt nhất. Hãy đọc tiếp để lấy lời khuyên của chúng tôi về cách phòng dịch."</p>
-    </div>
+    <p style="color: orange;padding: 0px;">&emsp;&emsp;Số liệu được cập nhật lúc 7:00am ngày 11/8/2021<br/>
+    <span style="color: white;">&emsp;&emsp;Dữ liệu được tham khảo tại:<a href="https://ncov.moh.gov.vn/">https://ncov.moh.gov.vn/</a></span></p>
+    <h4 class="thongke2">Nhận xét</h4>
+    <p style="color:white;padding: 0px;margin: 20px;">Tốc độ lây nhiễm ở Việt Nam hiện tại đang tăng rất nhanh và có xu hướng nhanh hơn. Con số nhiễm bệnh đã vượt qua 230 ngàn người và ta cũng thấy được tỉ lệ tử vong của những ca nhiễm là rất cao. Tỉ lệ ca nhiễm trên ca chữa khỏi đã vượt quá 5%. Vì vậy, để bảo vệ sức khỏe cho bản thân và toàn cộng đồng, chúng ta nên đảm bảo phải phòng tránh dịch một cách tốt nhất. Hãy đọc tiếp để lấy lời khuyên của chúng tôi về cách phòng dịch.</p>
 </div>
 <div id="cachpcc">
     <h1 class="thongke2">Cách phòng tránh dịch COVID-19</h1>
-    <h3 class="thongke3">1. Thường xuyên rửa tay đúng cách bằng xà phòng dưới vòi nước sạch, hoặc bằng dung dịch sát khuẩn có cồn (ít nhất 60% cồn).</h3>
+    <h3 class="thongke2">1. Thường xuyên rửa tay đúng cách bằng xà phòng dưới vòi nước sạch, hoặc bằng dung dịch sát khuẩn có cồn (ít nhất 60% cồn).</h3>
         <div class="anh"><img src="ruatay.png" style="width: 100%;height: 500px;"></div>
-    <h3 class="thongke3">2. Đeo khẩu trang nơi công cộng, trên phương tiện giao thông công cộng và đến cơ sở y tế.</h3>
+    <h3 class="thongke2">2. Đeo khẩu trang nơi công cộng, trên phương tiện giao thông công cộng và đến cơ sở y tế.</h3>
     <table id="ktrang">
         <tr>
             <td><img src="b1.png"></td>
@@ -213,13 +209,13 @@ function myFunction() {
             <td><img src="b6.png"></td>   
         </tr>
     </table>
-    <h3 class="thongke3">3. Tránh đưa tay lên mắt, mũi, miệng. Che miệng và mũi khi ho hoặc hắt hơi bằng khăn giấy, khăn vải, khuỷu tay áo.</h3>
+    <h3 class="thongke2">3. Tránh đưa tay lên mắt, mũi, miệng. Che miệng và mũi khi ho hoặc hắt hơi bằng khăn giấy, khăn vải, khuỷu tay áo.</h3>
     <div class="anh"><img src="duatay.jpg" style="width: 100%;height: 400px;"></div>
     <table id="a456">
         <tr>
-            <th class="thongke3">4. Tăng cường vận động, rèn luyện thể lực, dinh dưỡng hợp lý xây dựng lối sống lành mạnh.</th>
-            <th class="thongke3">5. Vệ sinh thông thoáng nhà cửa, lau rửa các bề mặt hay tiếp xúc.</th>
-            <th class="thongke3">6. Nếu bạn có dấu hiệu sốt, ho, hắt hơi, và khó thở, hãy tự cách ly tại nhà, đeo khẩu trang và gọi cho cơ sở y tế gần nhất để được tư vấn, khám và điều trị.</th>
+            <th class="thongke2">4. Tăng cường vận động, rèn luyện thể lực, dinh dưỡng hợp lý xây dựng lối sống lành mạnh.</th>
+            <th class="thongke2">5. Vệ sinh thông thoáng nhà cửa, lau rửa các bề mặt hay tiếp xúc.</th>
+            <th class="thongke2">6. Nếu bạn có dấu hiệu sốt, ho, hắt hơi, và khó thở, hãy tự cách ly tại nhà, đeo khẩu trang và gọi cho cơ sở y tế gần nhất để được tư vấn, khám và điều trị.</th>
         </tr>
         <tr>
             <th><img class="anh" src="b44.png"></th>
@@ -227,10 +223,10 @@ function myFunction() {
             <th><img class="anh"src="b66.png"></th>
         </tr>
     </table>
-    <h3 class="thongke3">7. Tự cách ly, theo dõi sức khỏe, khai báo y tế đầy đủ nếu trở về từ vùng dịch.</h3>
-    <h3 class="thongke3">8. Thực hiện khai báo y tế trực tuyến tại <a href="https://tokhaiyte.vn">https://tokhaiyte.vn</a> hoặc tải ứng dụng NCOVI từ địa chỉ <a href="https://ncovi.vn">https://ncovi.vn</a> và thường xuyên cập nhật tình trạng sức khoẻ của bản thân.</h3>
+    <h3 class="thongke2">7. Tự cách ly, theo dõi sức khỏe, khai báo y tế đầy đủ nếu trở về từ vùng dịch.</h3>
+    <h3 class="thongke2">8. Thực hiện khai báo y tế trực tuyến tại <a href="https://tokhaiyte.vn">https://tokhaiyte.vn</a> hoặc tải ứng dụng NCOVI từ địa chỉ <a href="https://ncovi.vn">https://ncovi.vn</a> và thường xuyên cập nhật tình trạng sức khoẻ của bản thân.</h3>
     <div class="anh"><img src="kbyt.jpg" style="width: 100%;height: 400px;"></div>
-    <h3 class="thongke3">9. Cài đặt ứng dụng Bluezone để được cảnh báo nguy cơ lây nhiễm COVID-19, giúp bảo vệ bản thân và gia đình: <a href="https://www.bluezone.gov.vn/">https://www.bluezone.gov.vn/</a>.</h3>
+    <h3 class="thongke2">9. Cài đặt ứng dụng Bluezone để được cảnh báo nguy cơ lây nhiễm COVID-19, giúp bảo vệ bản thân và gia đình: <a href="https://www.bluezone.gov.vn/">https://www.bluezone.gov.vn/</a>.</h3>
    <div class="anh"><img src="bluezone.jpg" style="width: 100%;height: 400px;"></div>
 </div>
 <div class="support-online">
@@ -278,29 +274,7 @@ function myFunction() {
 </script>
 </main>
 <footer id="about1">
-    <table>
-        <tr>
-            <td>Tác giả:</td>
-            <td>Mã sinh viên:</td>
-            <td>Lớp:</td>
-            <td>Số điện thoại:</td>
-            <td>Email:</td>
-        </tr>
-        <tr>
-            <td>Lê Văn Long</td>
-            <td>2050531200222</td>
-            <td>20T2</td>
-            <td><a href="tel:0869622389">0869622389</a></td>
-            <td><a href="mailto:2002long2906@gmail.com">2002long2906@gmail.com</a></td>
-        </tr>
-        <tr>
-            <td>Phan Quang Nhã</td>
-            <td>2050531200240</td>
-            <td>20T2</td>
-            <td><a href="tel:0773312787">0773312787</a></td>
-            <td><a href="mailto:nha123aahh@gmail.com">Nha123aahh@gmail.com</a></td>
-        </tr>
-    </table>
-    <p style="margin:0px">Bản quyền &copy thuộc về Le Van Long & Phan Quang Nha</p>
+    <h3 style="margin:0px">Bản quyền &copy thuộc về LE VAN LONG & PHAN QUANG NHA</h3>
+</footer>
 </body>
 </html>
